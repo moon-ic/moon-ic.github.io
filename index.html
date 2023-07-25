@@ -95,10 +95,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="git常用"><a href="#git常用" class="headerlink" title="git常用"></a>git常用</h2><p>克隆仓库：git clone &lt;git地址&gt;<br>初始化仓库：git init </p>
-<p>添加文件到暂存区：git add -A<br>把暂存区的文件提交到仓库：git commit -m “提交信息”<br>查看提交的历史记录：git log –stat</p>
+        <h2 id="git常用"><a href="#git常用" class="headerlink" title="git常用"></a>git常用</h2><p>工作区——&gt;暂存区——&gt;本地仓库——&gt;远程仓库</p>
+<p>克隆仓库：git clone &lt;git地址&gt;<br>初始化仓库：git init </p>
+<blockquote>
+<p>新建远程仓库之后可以连接初始化</p>
+</blockquote>
+<p>添加文件到暂存区：git add -A<br>把暂存区的文件提交到仓库：git commit -m “提交信息”<br>查看提交的历史记录：git log </p>
 <p>工作区回滚：git checkout <filename><br>撤销最后一次提交：git reset HEAD^1</p>
+<blockquote>
+<p>单纯修改可以点开history然后手动对比修改</p>
+</blockquote>
 <p>以当前分支为基础新建分支：git checkout -b <branchname><br>列举所有的分支：git branch<br>单纯地切换到某个分支：git checkout <branchname><br>删掉特定的分支：git branch -D <branchname><br>合并分支：git merge <branchname></p>
+<blockquote>
+<p>在哪个分支就是以那个分支为基础执行命令</p>
+</blockquote>
 <p>推送当前分支最新的提交到远程：git push<br>拉取远程分支最新的提交到本地：git pull</p>
 
       
