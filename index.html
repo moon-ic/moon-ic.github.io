@@ -73,6 +73,44 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git指令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/25/git%E6%8C%87%E4%BB%A4/" class="article-date">
+  <time class="dt-published" datetime="2023-07-25T08:28:28.000Z" itemprop="datePublished">2023-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/07/25/git%E6%8C%87%E4%BB%A4/">git指令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/07/25/git%E6%8C%87%E4%BB%A4/" data-id="clki1ca1e0000ygbb8c8b7i04" data-title="git指令" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hexo指令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/07/25/hexo%E6%8C%87%E4%BB%A4/" class="article-date">
@@ -131,245 +169,6 @@
 
 
   
-    <article id="post-css-base" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/23/css-base/" class="article-date">
-  <time class="dt-published" datetime="2023-07-23T08:46:41.000Z" itemprop="datePublished">2023-07-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/23/css-base/">css-base</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="css3-精灵图"><a href="#css3-精灵图" class="headerlink" title="css3 精灵图"></a>css3 精灵图</h2><ul>
-<li>作用：（背景为主）小图片整合到大图片里，有效减少服务器接受发送请求发送次数。</li>
-</ul>
-<h2 id="css3-三角"><a href="#css3-三角" class="headerlink" title="css3 三角"></a>css3 三角</h2><ul>
-<li>浏览器渲染三角盒子。</li>
-</ul>
-<h3 id="等腰三角形"><a href="#等腰三角形" class="headerlink" title="等腰三角形"></a>等腰三角形</h3><p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024194046280.png" alt="image-20221024194046280"></p>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024194330036.png" alt="image-20221024194330036"></p>
-<ul>
-<li>结构：width&#x3D;0;height&#x3D;0;</li>
-</ul>
-<blockquote>
-<ul>
-<li>通过颜色来改变三角，透明是（transparent）</li>
-<li>line-height&#x3D;0;font-size&#x3D;0(解决兼容性)</li>
-</ul>
-</blockquote>
-<ul>
-<li>位置实现：摆放大盒子，小盒子只装三角，定位摆放三角位置。</li>
-</ul>
-<h3 id="直角三角形"><a href="#直角三角形" class="headerlink" title="直角三角形"></a>直角三角形</h3><ul>
-<li>设置好 4 边三角形，去除任意一边</li>
-</ul>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024194156155.png" alt="image-20221024194156155"></p>
-<ul>
-<li><p>去除任意两边</p>
-<p>​ <img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024200542080.png" alt="image-20221024200542080"></p>
-<blockquote>
-<ul>
-<li><p>只剩下最后两个三角形，只能用 transparent 显示最后一个盒子（无高度无盒子）</p>
-</li>
-<li><p>通过调整不同边缘大小，调整图片形状。</p>
-</li>
-</ul>
-</blockquote>
-</li>
-<li><p>eg:</p>
-</li>
-</ul>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024201709980.png" alt="image-20221024201709980"></p>
-<h1 id="css3-2D-动画（transform）"><a href="#css3-2D-动画（transform）" class="headerlink" title="css3 2D 动画（transform）"></a>css3 2D 动画（transform）</h1><blockquote>
-<p>综合写法：</p>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025214020960.png" alt="image-20221025214020960"></p>
-</blockquote>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024202602456.png" alt="image-20221024202602456"></p>
-<h3 id="1-移动-translate"><a href="#1-移动-translate" class="headerlink" title="1. 移动 translate"></a>1. 移动 translate</h3><p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221024203124702.png" alt="image-20221024203124702"></p>
-<blockquote>
-<p>定位&#x2F;盒子外边距&#x2F;2d 转换</p>
-</blockquote>
-<ol>
-<li>优势：不会影响其他元素的位置。</li>
-<li>百分比单位相对自身元素（自己高度&#x2F;宽度 x%）</li>
-<li>对行内标签没有效果。</li>
-</ol>
-<h3 id="2-旋转-rotate"><a href="#2-旋转-rotate" class="headerlink" title="2. 旋转 rotate"></a>2. 旋转 rotate</h3><ul>
-<li><p>中心点旋转</p>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025210913555.png" alt="image-20221025210913555"></p>
-</li>
-</ul>
-<blockquote>
-<ul>
-<li><strong>过渡属性</strong>：过渡写到本身上，谁做动画给谁加</li>
-</ul>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025211242509.png" alt="image-20221025211242509"></p>
-<ul>
-<li><p>小三角：把正方形盒子边缘只剩两边后旋转</p>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025211900940.png" alt="image-20221025211900940"></p>
-</li>
-</ul>
-</blockquote>
-<ul>
-<li><p>换中心点</p>
-<p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025212048984.png" alt="image-20221025212048984"><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025212504287.png" alt="image-20221025212504287"></p>
-</li>
-</ul>
-<h3 id="3-缩放-scale"><a href="#3-缩放-scale" class="headerlink" title="3. 缩放 scale"></a>3. 缩放 scale</h3><p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025212632764.png" alt="image-20221025212632764"></p>
-<blockquote>
-<ul>
-<li>不会影响别的盒子，可以设置缩放中心点</li>
-<li>只写一个数据等比例缩放</li>
-</ul>
-</blockquote>
-<h3 id="4-倾斜-skew"><a href="#4-倾斜-skew" class="headerlink" title="4.倾斜 skew"></a>4.倾斜 skew</h3><p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221025214612896.png" alt="image-20221025214612896"></p>
-<p>![image](C:\Users\86183\Pictures\Saved Pictures\壁纸\image.png)</p>
-<h3 id="5-变化持续时间-transition"><a href="#5-变化持续时间-transition" class="headerlink" title="5.变化持续时间 transition"></a>5.变化持续时间 transition</h3><p>transition 属性是 transition-property，transition-duration，transition-timing-function 和 transition-delay 的一个简写属性。</p>
-<p>只加上 transform 属性，变化会很生硬，加上 transition 可以让变化更加丝滑自然。2</p>
-<table>
-<thead>
-<tr>
-<th>transition-property</th>
-<th>指定应用过渡属性的名称，你可以单独指定一个属性变化，也可以用 all 表示所有属性一起变化</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>transition-duration</td>
-<td>指定过渡动画所需的时间，以秒或毫秒为单位</td>
-</tr>
-<tr>
-<td>transition-timing-function</td>
-<td>变化方式，有匀速，先加速后减速等等</td>
-</tr>
-<tr>
-<td>transition-delay</td>
-<td>在过渡效果开始之前需要等待的时间</td>
-</tr>
-</tbody></table>
-<h2 id="css3-动画"><a href="#css3-动画" class="headerlink" title="css3 动画"></a>css3 动画</h2><h3 id="1-定义动画"><a href="#1-定义动画" class="headerlink" title="1.定义动画"></a>1.定义动画</h3><p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221026090213664.png" alt="image-20221026090213664"></p>
-<h3 id="2-调用动画"><a href="#2-调用动画" class="headerlink" title="2.调用动画"></a>2.调用动画</h3><p><img src="C:\Users\86183\AppData\Roaming\Typora\typora-user-images\image-20221026090331400.png" alt="image-20221026090331400"></p>
-<h3 id="3-值"><a href="#3-值" class="headerlink" title="3.值"></a>3.值</h3><p><img src="C:\Users\86183\Downloads\uTools_1666747135744.png" alt="uTools_1666747135744"></p>
-<blockquote>
-<p><img src="C:\Users\86183\Downloads\uTools_1666750747868.png" alt="uTools_1666750747868"></p>
-</blockquote>
-<h1 id="css3-3D-转换"><a href="#css3-3D-转换" class="headerlink" title="css3 3D 转换"></a>css3 3D 转换</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/23/css-base/" data-id="clkf74mtd00009cbbcg3v1cvh" data-title="css-base" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-test-my-site" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/23/test-my-site/" class="article-date">
-  <time class="dt-published" datetime="2023-07-23T08:30:36.000Z" itemprop="datePublished">2023-07-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/23/test-my-site/">test_my_site</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/23/test-my-site/" data-id="clkf710id0001ogbb6io49tiv" data-title="test_my_site" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/23/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-07-23T08:27:31.360Z" itemprop="datePublished">2023-07-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/23/hello-world/" data-id="clkf710i80000ogbba75s62hc" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
@@ -401,19 +200,11 @@
       <ul>
         
           <li>
+            <a href="/2023/07/25/git%E6%8C%87%E4%BB%A4/">git指令</a>
+          </li>
+        
+          <li>
             <a href="/2023/07/25/hexo%E6%8C%87%E4%BB%A4/">hexo相关</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/23/css-base/">css-base</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/23/test-my-site/">test_my_site</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/23/hello-world/">Hello World</a>
           </li>
         
       </ul>
