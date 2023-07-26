@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>recoil状态管理</title>
+    <link href="/2023/07/26/recoil%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"/>
+    <url>/2023/07/26/recoil%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<h2 id="mobx"><a href="#mobx" class="headerlink" title="mobx"></a>mobx</h2><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bbfd472bb1e2416ea3289ee09e11b917~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp" alt="image-20201124155837753"></p><ul><li><p>只能通过状态提升至公共祖先来共享状态，但可能导致一颗巨大的树重新渲染。</p></li><li><p>上下文（context）只能存储一个值，而不能存储一组不确定的值，且每个值都有自己的使用者（consumers）。</p></li><li><p>这两种方式都很难将组件树的叶子节点（使用状态的地方）与组件树的顶层（状态必须存在的地方）进行代码分拆。</p></li></ul><h2 id="recoil"><a href="#recoil" class="headerlink" title="recoil"></a>recoil</h2>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>typeScript</title>
+    <link href="/2023/07/25/typeScript/"/>
+    <url>/2023/07/25/typeScript/</url>
+    
+    <content type="html"><![CDATA[<h2 id="ts基础"><a href="#ts基础" class="headerlink" title="ts基础"></a>ts基础</h2><p>根目录下添加tsconfig.json</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="string">&quot;compilerOptions&quot;</span>:&#123;</span><br><span class="line">        <span class="string">&quot;watch&quot;</span>:<span class="literal">true</span><span class="comment">//自动调用tsc命令</span></span><br><span class="line">        <span class="string">&quot;removeComments&quot;</span>:<span class="literal">true</span><span class="comment">//删除源文件中注释减小体积</span></span><br><span class="line">        <span class="string">&quot;target&quot;</span>:<span class="string">&quot;es5&quot;</span><span class="comment">//指定想要编译js版本</span></span><br><span class="line">        ......</span><br><span class="line">        <span class="string">&quot;noImplicitAny&quot;</span>:<span class="literal">true</span><span class="comment">//编译器验证更严格,不会自动赋类型any，禁止动态类型</span></span><br><span class="line">        <span class="string">&quot;srtictNullChecks&quot;</span>:<span class="literal">true</span><span class="comment">//赋予null/undefined非法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="限制变量类型"><a href="#限制变量类型" class="headerlink" title="限制变量类型"></a>限制变量类型</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">multiply</span>(<span class="params">a:<span class="built_in">number</span>,b?:<span class="built_in">number</span></span>):<span class="built_in">number</span>&#123;<span class="comment">//没有返回值标记为void</span></span><br><span class="line">    <span class="keyword">return</span> a*b</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//():返回值类型，默认any，也有number,boolean,string,any</span></span><br><span class="line"><span class="comment">//? 可选参数</span></span><br><span class="line"><span class="comment">//对于初值确定的不需要标注</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">point</span>:[<span class="built_in">number</span>,<span class="built_in">number</span>,<span class="built_in">number</span>?]</span><br><span class="line"><span class="comment">//数组:number[] 二维数组:number[][]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">color</span>:<span class="built_in">number</span>|<span class="built_in">string</span></span><br><span class="line"><span class="comment">//别名</span></span><br><span class="line"><span class="keyword">type</span> <span class="title class_">UserID</span>=<span class="built_in">number</span>|<span class="built_in">string</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">b</span>(<span class="params">userid:UserID</span>)&#123;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">a</span>(<span class="params">callback:(data:<span class="built_in">string</span>)=&gt;<span class="built_in">void</span></span>)&#123;&#125;</span><br><span class="line"><span class="comment">//返回值不返回，传参为string类型</span></span><br><span class="line"><span class="title function_">a</span>(<span class="function">(<span class="params">data</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="title function_">alert</span>(data);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>git指令</title>
+    <link href="/2023/07/25/git%E6%8C%87%E4%BB%A4/"/>
+    <url>/2023/07/25/git%E6%8C%87%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<h2 id="git常用"><a href="#git常用" class="headerlink" title="git常用"></a>git常用</h2><p>工作区——&gt;暂存区——&gt;本地仓库——&gt;远程仓库</p><p>克隆仓库：git clone &lt;git地址&gt;<br>初始化仓库：git init </p><blockquote><p>新建远程仓库之后可以连接初始化</p></blockquote><p>添加文件到暂存区：git add -A<br>把暂存区的文件提交到仓库：git commit -m “提交信息”<br>查看提交的历史记录：git log </p><p>工作区回滚：git checkout <filename><br>撤销最后一次提交：git reset HEAD^1</p><blockquote><p>单纯修改可以点开history然后手动对比修改</p></blockquote><p>以当前分支为基础新建分支：git checkout -b <branchname><br>列举所有的分支：git branch<br>单纯地切换到某个分支：git checkout <branchname><br>删掉特定的分支：git branch -D <branchname><br>合并分支：git merge <branchname></p><blockquote><p>在哪个分支就是以那个分支为基础执行命令</p></blockquote><p>推送当前分支最新的提交到远程：git push<br>拉取远程分支最新的提交到本地：git pull</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hexo相关</title>
+    <link href="/2023/07/25/hexo%E6%8C%87%E4%BB%A4/"/>
+    <url>/2023/07/25/hexo%E6%8C%87%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<h2 id="日常hexo指令"><a href="#日常hexo指令" class="headerlink" title="日常hexo指令"></a>日常hexo指令</h2><ul><li><p>hexo n “我的博客” &#x3D;&#x3D; hexo new “我的博客”<br>新建文章</p></li><li><p>hexo g &#x3D;&#x3D; hexo generate<br>生成</p></li><li><p>hexo s &#x3D;&#x3D; hexo server<br>启动服务预览</p></li><li><p>hexo d &#x3D;&#x3D; hexo deploy<br>部署</p></li><li><p>hexo server<br>Hexo会监视文件变动并自动更新，无须重启服务器</p></li><li><p>hexo server -s<br>静态模式</p></li><li><p>hexo server -p 5000<br>更改端口</p></li><li><p>hexo server -i 192.168.1.1 #<br>自定义 IP</p></li><li><p>hexo clean<br>清除缓存，若是网页正常情况下可以忽略这条命令</p></li></ul><blockquote><p>创建文档hexo n “xxx”</p><p>编写文档typora</p><p>hexo g</p><p>hexo d</p></blockquote>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
