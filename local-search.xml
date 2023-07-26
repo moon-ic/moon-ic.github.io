@@ -4,6 +4,45 @@
   
   
   <entry>
+    <title>react</title>
+    <link href="/2023/07/26/react/"/>
+    <url>/2023/07/26/react/</url>
+    
+    <content type="html"><![CDATA[<h2 id="react基础"><a href="#react基础" class="headerlink" title="react基础"></a>react基础</h2><h2 id="react进阶"><a href="#react进阶" class="headerlink" title="react进阶"></a>react进阶</h2><p>生命周期、价值转化、强化认知、资源倾斜、完善逻辑、抽离透传、复用打法、商业模式、快速响应、定性定量、关键路径、去中心化、结果导向、垂直领域、归因分析、体验度量、信息屏障</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="/2023/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <url>/2023/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>算法入门</title>
+    <link href="/2023/07/26/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/"/>
+    <url>/2023/07/26/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>recoil状态管理</title>
     <link href="/2023/07/26/recoil%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"/>
     <url>/2023/07/26/recoil%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</url>
