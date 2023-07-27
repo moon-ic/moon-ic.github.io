@@ -4,9 +4,9 @@
   
   
   <entry>
-    <title>重邮帮项目代码值得记下来（1）</title>
-    <link href="/2023/07/26/%E9%87%8D%E9%82%AE%E5%B8%AE%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%80%BC%E5%BE%97%E8%AE%B0%E4%B8%8B%E6%9D%A5%EF%BC%881%EF%BC%89/"/>
-    <url>/2023/07/26/%E9%87%8D%E9%82%AE%E5%B8%AE%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%80%BC%E5%BE%97%E8%AE%B0%E4%B8%8B%E6%9D%A5%EF%BC%881%EF%BC%89/</url>
+    <title>桉陈的学习日记1</title>
+    <link href="/2023/07/27/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B01/"/>
+    <url>/2023/07/27/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B01/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -99,7 +99,7 @@
     <link href="/2023/07/25/git%E6%8C%87%E4%BB%A4/"/>
     <url>/2023/07/25/git%E6%8C%87%E4%BB%A4/</url>
     
-    <content type="html"><![CDATA[<h2 id="git常用"><a href="#git常用" class="headerlink" title="git常用"></a>git常用</h2><p>工作区——&gt;暂存区——&gt;本地仓库——&gt;远程仓库</p><p>克隆仓库：git clone &lt;git地址&gt;<br>初始化仓库：git init </p><blockquote><p>新建远程仓库之后可以连接初始化</p></blockquote><p>添加文件到暂存区：git add -A<br>把暂存区的文件提交到仓库：git commit -m “提交信息”<br>查看提交的历史记录：git log </p><p>工作区回滚：git checkout <filename><br>撤销最后一次提交：git reset HEAD^1</p><blockquote><p>单纯修改可以点开history然后手动对比修改</p></blockquote><p>以当前分支为基础新建分支：git checkout -b <branchname><br>列举所有的分支：git branch<br>单纯地切换到某个分支：git checkout <branchname><br>删掉特定的分支：git branch -D <branchname><br>合并分支：git merge <branchname></p><blockquote><p>在哪个分支就是以那个分支为基础执行命令</p></blockquote><p>推送当前分支最新的提交到远程：git push<br>拉取远程分支最新的提交到本地：git pull</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="git常用"><a href="#git常用" class="headerlink" title="git常用"></a>git常用</h2><p>工作区——&gt;暂存区——&gt;本地仓库——&gt;远程仓库</p><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>克隆仓库：git clone &lt;git地址&gt;<br>初始化仓库：git init </p><blockquote><p>新建远程仓库之后可以连接初始化</p></blockquote><h4 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h4><p>添加文件到暂存区：git add -A<br>把暂存区的文件提交到仓库：git commit -m “提交信息”<br>查看提交的历史记录：git log </p><h4 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h4><ol><li><strong>工作区</strong>回滚：git checkout <filename></li><li>撤销最后一次提交：git reset HEAD^1</li></ol><blockquote><p>单纯修改可以点开history然后手动对比修改</p></blockquote><ol start="3"><li><p>git reset回滚</p><ul><li><p>git log查询版本号<img src="https://img-blog.csdnimg.cn/20190731102022900.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l4bHNoaw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p></li><li><p>（github查询也可以）</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwNDE0MjAzMzQ0MTM4" alt="这里写图片描述"></p></li><li><p>使用“git reset –hard 目标版本号”命令将版本回退</p></li><li><p>用git push-f强制推上去</p></li></ul></li></ol><blockquote><p><img src="https://img-blog.csdnimg.cn/20190731102055301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l4bHNoaw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p></blockquote><h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>以当前分支为基础新建分支：git checkout -b <branchname><br>列举所有的分支：git branch<br>单纯地切换到某个分支：git checkout <branchname><br>删掉特定的分支：git branch -D <branchname><br>合并分支：git merge <branchname></p><blockquote><p>在哪个分支就是以那个分支为基础执行命令</p></blockquote><h4 id="远程"><a href="#远程" class="headerlink" title="远程"></a>远程</h4><p>推送当前分支最新的提交到远程：git push<br>拉取远程分支最新的提交到本地：git pull</p>]]></content>
     
     
     
