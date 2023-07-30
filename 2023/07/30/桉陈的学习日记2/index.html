@@ -16,22 +16,22 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="react基础组件 form组件校验中，2组rules对象设置不同message是为了根据不同错误提示不同信息 12345678910&lt;Form.Item       name&#x3D;&quot;code&quot;       rules&#x3D;&amp;#123;[         &amp;#123; len: 6,           message: &amp;#x27;验证码6个字符&amp;#x27;,">
+    <meta name="description" content="7月21日进了网校，到今天已经9天了，我好像什么也没有做。在最初的新奇之后，立刻无所适从也无所事事了起来。不知道是因为孤独还是因为性格，慢慢地又恢复到昏天黑地对什么都提不起兴趣的样子。 这几天急不可待地到处通知家人和朋友我进了网校，仍然没有获得想要的实感。越夸赞越迷茫心虚，过去一年时光像是一场梦，我还是没有成长到填补我心灵的空缺。 我像草一样渴望更多的水、阳光、养分，但是除了我自己谁也给不了我获取">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react">
-<meta property="og:url" content="http://example.com/2023/07/26/react/index.html">
+<meta property="og:title" content="桉陈的学习日记2">
+<meta property="og:url" content="http://example.com/2023/07/30/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="react基础组件 form组件校验中，2组rules对象设置不同message是为了根据不同错误提示不同信息 12345678910&lt;Form.Item       name&#x3D;&quot;code&quot;       rules&#x3D;&amp;#123;[         &amp;#123; len: 6,           message: &amp;#x27;验证码6个字符&amp;#x27;,">
+<meta property="og:description" content="7月21日进了网校，到今天已经9天了，我好像什么也没有做。在最初的新奇之后，立刻无所适从也无所事事了起来。不知道是因为孤独还是因为性格，慢慢地又恢复到昏天黑地对什么都提不起兴趣的样子。 这几天急不可待地到处通知家人和朋友我进了网校，仍然没有获得想要的实感。越夸赞越迷茫心虚，过去一年时光像是一场梦，我还是没有成长到填补我心灵的空缺。 我像草一样渴望更多的水、阳光、养分，但是除了我自己谁也给不了我获取">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-26T10:58:11.000Z">
-<meta property="article:modified_time" content="2023-07-29T09:13:00.938Z">
+<meta property="article:published_time" content="2023-07-30T12:29:43.000Z">
+<meta property="article:modified_time" content="2023-07-30T12:40:46.061Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="react">
+<meta property="article:tag" content="diary">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>react - Hexo</title>
+  <title>桉陈的学习日记2 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="react"></span>
+            <span id="subtitle" data-typed-text="桉陈的学习日记2"></span>
           
         </div>
 
@@ -208,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-26 18:58" pubdate>
-          2023年7月26日 晚上
+        <time datetime="2023-07-30 20:29" pubdate>
+          2023年7月30日 晚上
         </time>
       </span>
     
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          351 字
+          346 字
         
       </span>
     
@@ -268,19 +268,19 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">react</h1>
+            <h1 id="seo-header">桉陈的学习日记2</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="react基础"><a href="#react基础" class="headerlink" title="react基础"></a>react基础</h2><h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><ol>
-<li><p>form组件校验中，2组rules对象设置不同message是为了根据不同错误提示不同信息</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs react">&lt;Form.Item<br>       name=&quot;code&quot;<br>       rules=&#123;[<br>         &#123; len: 6, <br>          message: &#x27;验证码6个字符&#x27;, <br>          validateTrigger: &#x27;onBlur&#x27; &#125;,<br>         &#123; required: true,<br>          message: &#x27;请输入验证码&#x27; &#125;<br>  		]&#125;&gt;<br> <br></code></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="react进阶"><a href="#react进阶" class="headerlink" title="react进阶"></a>react进阶</h2><blockquote>
-<p>生命周期、价值转化、强化认知、资源倾斜、完善逻辑、抽离透传、复用打法、商业模式、快速响应、定性定量、关键路径、去中心化、结果导向、垂直领域、归因分析、体验度量、信息屏障</p>
-</blockquote>
-<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3>
+                <p>7月21日进了网校，到今天已经9天了，我好像什么也没有做。在最初的新奇之后，立刻无所适从也无所事事了起来。不知道是因为孤独还是因为性格，慢慢地又恢复到昏天黑地对什么都提不起兴趣的样子。</p>
+<p>这几天急不可待地到处通知家人和朋友我进了网校，仍然没有获得想要的实感。越夸赞越迷茫心虚，过去一年时光像是一场梦，我还是没有成长到填补我心灵的空缺。</p>
+<p>我像草一样渴望更多的水、阳光、养分，但是除了我自己谁也给不了我获取它们的能力。</p>
+<p>人也不能杵着拐杖去奔跑。</p>
+<p>还不够，我想要狂奔。</p>
+<p>心砰砰地跳，我需要确认我是活着的。我需要理想或者说事业，我需要做点什么，我需要激情去点燃我干涩的认知，而不是反复看弱智小说到呕吐在我苍白的舒适区眼巴巴地看。我要出去，让我狂奔好了——我多想去爱！</p>
+<p>就现在，我想跑起来，风追不上我，谁也追不上我。</p>
+
                 
               </div>
             
@@ -298,8 +298,15 @@
     
       <span class="category-chain">
         
-  <a href="/categories/React/" class="category-chain-item">React</a>
+  <a href="/categories/Diary/" class="category-chain-item">Diary</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Diary/2023/" class="category-chain-item">2023</a>
+  
+  
+
   
 
       </span>
@@ -313,7 +320,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/react/" class="print-no-link">#react</a>
+        <a href="/tags/diary/" class="print-no-link">#diary</a>
       
     </div>
   
@@ -325,8 +332,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>react</div>
-      <div>http://example.com/2023/07/26/react/</div>
+      <div>桉陈的学习日记2</div>
+      <div>http://example.com/2023/07/30/桉陈的学习日记2/</div>
     </div>
     <div class="license-meta">
       
@@ -338,7 +345,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月26日</div>
+          <div>2023年7月30日</div>
         </div>
       
       
@@ -370,18 +377,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/26/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/" title="开发规范">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">开发规范</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="数据结构">
-                        <span class="hidden-mobile">数据结构</span>
+                      <a href="/2023/07/27/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B01/" title="桉陈的学习日记1">
+                        <span class="hidden-mobile">桉陈的学习日记1</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>桉陈的学习日记2</title>
+    <link href="/2023/07/30/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/"/>
+    <url>/2023/07/30/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/</url>
+    
+    <content type="html"><![CDATA[<p>7月21日进了网校，到今天已经9天了，我好像什么也没有做。在最初的新奇之后，立刻无所适从也无所事事了起来。不知道是因为孤独还是因为性格，慢慢地又恢复到昏天黑地对什么都提不起兴趣的样子。</p><p>这几天急不可待地到处通知家人和朋友我进了网校，仍然没有获得想要的实感。越夸赞越迷茫心虚，过去一年时光像是一场梦，我还是没有成长到填补我心灵的空缺。</p><p>我像草一样渴望更多的水、阳光、养分，但是除了我自己谁也给不了我获取它们的能力。</p><p>人也不能杵着拐杖去奔跑。</p><p>还不够，我想要狂奔。</p><p>心砰砰地跳，我需要确认我是活着的。我需要理想或者说事业，我需要做点什么，我需要激情去点燃我干涩的认知，而不是反复看弱智小说到呕吐在我苍白的舒适区眼巴巴地看。我要出去，让我狂奔好了——我多想去爱！</p><p>就现在，我想跑起来，风追不上我，谁也追不上我。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Diary</category>
+      
+      <category>2023</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>diary</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>桉陈的学习日记1</title>
     <link href="/2023/07/27/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B01/"/>
     <url>/2023/07/27/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B01/</url>
@@ -60,7 +87,7 @@
     <link href="/2023/07/26/react/"/>
     <url>/2023/07/26/react/</url>
     
-    <content type="html"><![CDATA[<h2 id="react基础"><a href="#react基础" class="headerlink" title="react基础"></a>react基础</h2><h2 id="react进阶"><a href="#react进阶" class="headerlink" title="react进阶"></a>react进阶</h2><blockquote><p>生命周期、价值转化、强化认知、资源倾斜、完善逻辑、抽离透传、复用打法、商业模式、快速响应、定性定量、关键路径、去中心化、结果导向、垂直领域、归因分析、体验度量、信息屏障</p></blockquote><h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3>]]></content>
+    <content type="html"><![CDATA[<h2 id="react基础"><a href="#react基础" class="headerlink" title="react基础"></a>react基础</h2><h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><ol><li><p>form组件校验中，2组rules对象设置不同message是为了根据不同错误提示不同信息</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs react">&lt;Form.Item<br>       name=&quot;code&quot;<br>       rules=&#123;[<br>         &#123; len: 6, <br>          message: &#x27;验证码6个字符&#x27;, <br>          validateTrigger: &#x27;onBlur&#x27; &#125;,<br>         &#123; required: true,<br>          message: &#x27;请输入验证码&#x27; &#125;<br>  ]&#125;&gt;<br> <br></code></pre></td></tr></table></figure></li></ol><h2 id="react进阶"><a href="#react进阶" class="headerlink" title="react进阶"></a>react进阶</h2><blockquote><p>生命周期、价值转化、强化认知、资源倾斜、完善逻辑、抽离透传、复用打法、商业模式、快速响应、定性定量、关键路径、去中心化、结果导向、垂直领域、归因分析、体验度量、信息屏障</p></blockquote><h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3>]]></content>
     
     
     <categories>
