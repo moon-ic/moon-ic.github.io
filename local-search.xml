@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Mock模拟后端数据返回</title>
+    <link href="/2023/08/04/Mock%E6%A8%A1%E6%8B%9F%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E8%BF%94%E5%9B%9E/"/>
+    <url>/2023/08/04/Mock%E6%A8%A1%E6%8B%9F%E5%90%8E%E7%AB%AF%E6%95%B0%E6%8D%AE%E8%BF%94%E5%9B%9E/</url>
+    
+    <content type="html"><![CDATA[<h2 id="mockjs"><a href="#mockjs" class="headerlink" title="mockjs"></a>mockjs</h2><ol><li><p>src&#x2F;mock</p></li><li><p>mock&#x2F;index.ts</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs react">import Mock from &#x27;mockjs&#x27;<br><br>Mock.mock(&#x27;/notification/count/&#x27;, &#123;<br>  code: 200,<br>  msg: &#x27;success&#x27;,<br>  data: &#123;<br>    count: 3,<br>   格式参考<br>  &#125;,<br>&#125;)<br><br>// 可以继续添加其他接口的 mock 数据<br></code></pre></td></tr></table></figure></li><li><p>mock与生产环境分离</p><blockquote><ul><li><p>在npm script中增加命令并添加mock环境变量，开发环境中用该命令启动。 </p></li><li><p>在入口文件中使用mock环境变量判断是否加载mock.js，使mock数据和业务代码彻底分离。</p></li></ul></blockquote></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Tools</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>tools</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>桉陈的学习日记2</title>
     <link href="/2023/07/30/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/"/>
     <url>/2023/07/30/%E6%A1%89%E9%99%88%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/</url>
